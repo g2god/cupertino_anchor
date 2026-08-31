@@ -1,6 +1,6 @@
 name: cupertino_anchor
 description: Production-ready Cupertino dropdown picker with zero-flicker dynamic positioning, safe-area awareness, and native iOS popover aesthetics.
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/g2god/cupertino_anchor
 issue_tracker: https://github.com/g2god/cupertino_anchor/issues
 

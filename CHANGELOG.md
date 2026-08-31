@@ -1,3 +1,7 @@
+# 1.0.2
+
+- Enhanced iOS popover spring physics animation with cubic sequence interpolation and synchronized height expansion.
+
 # 1.0.1
 
 - Updated pubspec description and repository metadata for pub.dev Pana score compliance.
