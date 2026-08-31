@@ -1,3 +1,7 @@
+# 1.0.1
+
+- Updated pubspec description and repository metadata for pub.dev Pana score compliance.
+
 # 1.0.0
 
 - Initial stable production release of `cupertino_anchor` / `CupertinoDropdown`.
