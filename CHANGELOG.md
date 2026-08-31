@@ -1,0 +1,12 @@
+# 1.0.0
+
+- Initial stable production release of `cupertino_anchor` / `CupertinoDropdown`.
+- Intelligent dynamic positioning engine (`CupertinoDropdownPositionCalculator`) with Up/Down auto-resolution.
+- Zero-flicker architecture with pre-layout coordinate calculation.
+- Native iOS popover animation (scale, fade, directional offset).
+- Full generic item support (`CupertinoDropdown<T>`) and custom `itemBuilder`.
+- Complete theming support (`CupertinoDropdownTheme`) with automatic dark/light mode resolution and frosted glass backdrop blur.
+- Live anchor tracking across scrolling widgets (`ListView`, `SingleChildScrollView`, etc.).
+- Safe area and keyboard inset avoidance (`MediaQuery.viewInsets`).
+- Accessibility semantics and screen reader support.
+- Comprehensive unit tests and 10-demo example showcase app.
