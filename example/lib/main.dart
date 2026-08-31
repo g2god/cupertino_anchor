@@ -26,7 +26,8 @@ class CupertinoDropdownDemoApp extends StatefulWidget {
   const CupertinoDropdownDemoApp({super.key});
 
   @override
-  State<CupertinoDropdownDemoApp> createState() => _CupertinoDropdownDemoAppState();
+  State<CupertinoDropdownDemoApp> createState() =>
+      _CupertinoDropdownDemoAppState();
 }
 
 class _CupertinoDropdownDemoAppState extends State<CupertinoDropdownDemoApp> {
@@ -34,7 +35,8 @@ class _CupertinoDropdownDemoAppState extends State<CupertinoDropdownDemoApp> {
 
   void _toggleTheme() {
     setState(() {
-      _brightness = _brightness == Brightness.light ? Brightness.dark : Brightness.light;
+      _brightness =
+          _brightness == Brightness.light ? Brightness.dark : Brightness.light;
     });
   }
 
@@ -134,7 +136,9 @@ class _DemoHomePageState extends State<DemoHomePage> {
             subtitle,
             style: TextStyle(
               fontSize: 13.0,
-              color: isDark ? CupertinoColors.systemGrey : CupertinoColors.systemGrey2,
+              color: isDark
+                  ? CupertinoColors.systemGrey
+                  : CupertinoColors.systemGrey2,
             ),
           ),
         ],
@@ -162,7 +166,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
           padding: const EdgeInsets.all(16.0),
           children: [
             // Demo 1: Basic String Dropdown
-            _buildSectionHeader('Demo 1 — Basic CupertinoDropdown<String>', 'Clean iOS-styled dropdown with selection checkmark'),
+            _buildSectionHeader('Demo 1 — Basic CupertinoDropdown<String>',
+                'Clean iOS-styled dropdown with selection checkmark'),
             CupertinoDropdown<String>(
               items: _states,
               value: _selectedState,
@@ -171,7 +176,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 2: Opens Below (Anchored high)
-            _buildSectionHeader('Demo 2 — Automatic Placement (Opens Below)', 'Plenty of space below, automatically resolves direction to DOWN'),
+            _buildSectionHeader('Demo 2 — Automatic Placement (Opens Below)',
+                'Plenty of space below, automatically resolves direction to DOWN'),
             CupertinoDropdown<String>(
               items: _states,
               value: _selectedTopState,
@@ -180,7 +186,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 3: Opens Above (Near bottom or forced)
-            _buildSectionHeader('Demo 3 — Opens Above', 'Forced or constrained to open UP with anchored origin animation'),
+            _buildSectionHeader('Demo 3 — Opens Above',
+                'Forced or constrained to open UP with anchored origin animation'),
             CupertinoDropdown<String>(
               items: _states,
               value: _selectedBottomState,
@@ -190,7 +197,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 4: Constrained Space
-            _buildSectionHeader('Demo 4 — Constrained Height Space', 'Automatically adjusts height when vertical area is limited'),
+            _buildSectionHeader('Demo 4 — Constrained Height Space',
+                'Automatically adjusts height when vertical area is limited'),
             Container(
               height: 120,
               padding: const EdgeInsets.all(8.0),
@@ -204,22 +212,26 @@ class _DemoHomePageState extends State<DemoHomePage> {
                 value: _selectedConstrainedState,
                 maxHeight: 100,
                 hint: 'Constrained height dropdown',
-                onChanged: (val) => setState(() => _selectedConstrainedState = val),
+                onChanged: (val) =>
+                    setState(() => _selectedConstrainedState = val),
               ),
             ),
 
             // Demo 5: Inside ScrollView / Anchor Tracking
-            _buildSectionHeader('Demo 5 — Inside Scrollable View', 'Scroll while open to test live anchor tracking or dismiss on scroll'),
+            _buildSectionHeader('Demo 5 — Inside Scrollable View',
+                'Scroll while open to test live anchor tracking or dismiss on scroll'),
             CupertinoDropdown<String>(
               items: _states,
               value: _selectedListState,
               hint: 'Scroll aware dropdown',
-              dismissBehavior: DropdownDismissBehavior.closeWhenAnchorLeavesScreen,
+              dismissBehavior:
+                  DropdownDismissBehavior.closeWhenAnchorLeavesScreen,
               onChanged: (val) => setState(() => _selectedListState = val),
             ),
 
             // Demo 6: Keyboard Avoidance
-            _buildSectionHeader('Demo 6 — Keyboard Inset Awareness', 'Tap the text field to raise keyboard and observe repositioning'),
+            _buildSectionHeader('Demo 6 — Keyboard Inset Awareness',
+                'Tap the text field to raise keyboard and observe repositioning'),
             const Padding(
               padding: EdgeInsets.only(bottom: 8.0),
               child: CupertinoTextField(
@@ -235,7 +247,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 7: Tablet / Wide Custom Width
-            _buildSectionHeader('Demo 7 — Custom Width & Boundaries', 'Specifies custom popup width and stays bounded to screen'),
+            _buildSectionHeader('Demo 7 — Custom Width & Boundaries',
+                'Specifies custom popup width and stays bounded to screen'),
             Row(
               children: [
                 Expanded(
@@ -259,7 +272,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 8: Dark Mode & Custom Theming
-            _buildSectionHeader('Demo 8 — Custom Theming & Blur Sigma', 'Custom frosted glass, purple accent and border radius'),
+            _buildSectionHeader('Demo 8 — Custom Theming & Blur Sigma',
+                'Custom frosted glass, purple accent and border radius'),
             CupertinoDropdown<String>(
               items: _states,
               hint: 'Custom styled dropdown',
@@ -277,7 +291,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 9: Custom Item Builder (Generic Objects)
-            _buildSectionHeader('Demo 9 — Custom Generic Models & ItemBuilder', 'Generic object binding with custom avatar, subtitle & title'),
+            _buildSectionHeader('Demo 9 — Custom Generic Models & ItemBuilder',
+                'Generic object binding with custom avatar, subtitle & title'),
             CupertinoDropdown<UserItem>(
               items: _users,
               value: _selectedUser,
@@ -286,7 +301,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
               itemBuilder: (context, user) {
                 return Row(
                   children: [
-                    Icon(user.icon, size: 28, color: CupertinoColors.activeBlue),
+                    Icon(user.icon,
+                        size: 28, color: CupertinoColors.activeBlue),
                     const SizedBox(width: 10),
                     Expanded(
                       child: Column(
@@ -317,7 +333,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
             ),
 
             // Demo 10: Rapid Open / Close & Controller Stress Test
-            _buildSectionHeader('Demo 10 — Controller & Rapid Tap Protection', 'Programmatic control and stress test counter'),
+            _buildSectionHeader('Demo 10 — Controller & Rapid Tap Protection',
+                'Programmatic control and stress test counter'),
             Row(
               children: [
                 Expanded(
@@ -331,7 +348,8 @@ class _DemoHomePageState extends State<DemoHomePage> {
                 ),
                 const SizedBox(width: 8),
                 CupertinoButton(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                   color: CupertinoColors.systemGrey5,
                   child: Text('Rapid Tap: $_rapidTapCount'),
                   onPressed: () {

@@ -171,6 +171,7 @@ class _CupertinoDropdownOverlayState<T> extends State<CupertinoDropdownOverlay<T
               child: CupertinoDropdownAnimation(
                 animation: widget.animationController,
                 resolvedDirection: direction,
+                targetHeight: rect.height,
                 child: Container(
                   decoration: BoxDecoration(
                     color: widget.theme.backgroundColor,
