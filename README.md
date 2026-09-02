@@ -11,8 +11,7 @@ A production-ready, zero-flicker Cupertino-style dropdown and picker package for
 
 | Light Mode | Dark Mode |
 | :---: | :---: |
-| <video src="https://raw.githubusercontent.com/g2god/cupertino_anchor/main/assets/videos/whitethemedemo.mp4" width="320" controls></video> | <video src="https://raw.githubusercontent.com/g2god/cupertino_anchor/main/assets/videos/darkthemedemo.mp4" width="320" controls></video> |
-| [whitethemedemo.mp4](file:///c:/Users/MathankumarV/Downloads/Projects/cupertino_anchor/assets/videos/whitethemedemo.mp4) | [darkthemedemo.mp4](file:///c:/Users/MathankumarV/Downloads/Projects/cupertino_anchor/assets/videos/darkthemedemo.mp4) |
+| <img src="https://raw.githubusercontent.com/g2god/cupertino_anchor/main/assets/videos/whitethemedemo.gif" width="320" alt="Light Mode Demo" /> | <img src="https://raw.githubusercontent.com/g2god/cupertino_anchor/main/assets/videos/darkthemedemo.gif" width="320" alt="Dark Mode Demo" /> |
 
 ---
 
