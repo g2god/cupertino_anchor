@@ -1,3 +1,8 @@
+# 1.1.0
+
+- Added `cupertino_icons` dependency ensuring crisp iOS glyph rendering across all platforms.
+- Updated README demo previews with light and dark mode video recordings.
+
 # 1.0.2
 
 - Enhanced iOS popover spring physics animation with cubic sequence interpolation and synchronized height expansion.

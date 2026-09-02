@@ -1,0 +1,7 @@
+# Files to exclude from pub.dev package bundle
+build/
+.dart_tool/
+assets/videos/
+example/
+.idea/
+*.iml

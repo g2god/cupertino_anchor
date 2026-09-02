@@ -2,8 +2,17 @@
 
 A production-ready, zero-flicker Cupertino-style dropdown and picker package for Flutter. Built with intelligent dynamic positioning, safe-area awareness, keyboard avoidance, and native iOS popover aesthetics.
 
-[![pub package](https://img.shields.io/badge/pub-v1.0.0-blue.svg)](https://pub.dev/packages/cupertino_anchor)
+[![pub package](https://img.shields.io/badge/pub-v1.1.0-blue.svg)](https://pub.dev/packages/cupertino_anchor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+## 🎬 Demo Previews
+
+| Light Mode | Dark Mode |
+| :---: | :---: |
+| <video src="https://raw.githubusercontent.com/g2god/cupertino_anchor/main/assets/videos/whitethemedemo.mp4" width="320" controls></video> | <video src="https://raw.githubusercontent.com/g2god/cupertino_anchor/main/assets/videos/darkthemedemo.mp4" width="320" controls></video> |
+| [whitethemedemo.mp4](file:///c:/Users/MathankumarV/Downloads/Projects/cupertino_anchor/assets/videos/whitethemedemo.mp4) | [darkthemedemo.mp4](file:///c:/Users/MathankumarV/Downloads/Projects/cupertino_anchor/assets/videos/darkthemedemo.mp4) |
 
 ---
 
