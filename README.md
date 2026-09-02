@@ -2,7 +2,7 @@
 
 A production-ready, zero-flicker Cupertino-style dropdown and picker package for Flutter. Built with intelligent dynamic positioning, safe-area awareness, keyboard avoidance, and native iOS popover aesthetics.
 
-[![pub package](https://img.shields.io/badge/pub-v1.1.0-blue.svg)](https://pub.dev/packages/cupertino_anchor)
+[![pub package](https://img.shields.io/badge/pub-v1.1.1-blue.svg)](https://pub.dev/packages/cupertino_anchor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -37,7 +37,7 @@ Add `cupertino_anchor` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  cupertino_anchor: ^1.0.0
+  cupertino_anchor: ^1.1.1
 ```
 
 Import it:

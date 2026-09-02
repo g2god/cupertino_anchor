@@ -1,3 +1,7 @@
+# 1.1.1
+
+- Updated README demo previews to animated GIFs for seamless display across GitHub and pub.dev.
+
 # 1.1.0
 
 - Added `cupertino_icons` dependency ensuring crisp iOS glyph rendering across all platforms.
