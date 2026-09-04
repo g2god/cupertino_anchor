@@ -18,6 +18,7 @@ class CupertinoDropdownPosition {
   /// Whether the dropdown height was constrained because neither side had full desired height.
   final bool isConstrained;
 
+  /// Creates a [CupertinoDropdownPosition] instance with resolved geometric placement properties.
   const CupertinoDropdownPosition({
     required this.targetRect,
     required this.resolvedDirection,

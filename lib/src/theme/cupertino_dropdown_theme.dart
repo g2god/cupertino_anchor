@@ -74,6 +74,7 @@ class CupertinoDropdownTheme {
   /// Chevron icon size.
   final double chevronSize;
 
+  /// Creates a [CupertinoDropdownTheme] configuration.
   const CupertinoDropdownTheme({
     this.backgroundColor,
     this.backdropBlurSigma = 20.0,
@@ -209,6 +210,7 @@ class CupertinoDropdownTheme {
     );
   }
 
+  /// Returns a copy of this theme with the specified properties overridden.
   CupertinoDropdownTheme copyWith({
     Color? backgroundColor,
     double? backdropBlurSigma,

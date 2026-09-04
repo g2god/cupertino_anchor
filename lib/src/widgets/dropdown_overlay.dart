@@ -7,20 +7,46 @@ import '../animation/dropdown_animation.dart';
 
 /// Overlay widget rendering the dropdown floating menu at the precise calculated targetRect.
 class CupertinoDropdownOverlay<T> extends StatefulWidget {
+  /// The initial calculated geometry and position for the popover.
   final CupertinoDropdownPosition initialPosition;
+
+  /// Notifier delivering dynamic position updates when viewport or anchor scrolls.
   final ValueNotifier<CupertinoDropdownPosition> positionNotifier;
+
+  /// Driving animation controller for entrance and exit transitions.
   final Animation<double> animationController;
+
+  /// List of items to display in the menu.
   final List<T> items;
+
+  /// Currently selected value.
   final T? selectedValue;
+
+  /// Callback fired when an item is tapped.
   final ValueChanged<T> onSelected;
+
+  /// Custom item builder for rendering menu rows.
   final Widget Function(BuildContext context, T item)? itemBuilder;
+
+  /// Function to determine if an item is disabled from selection.
   final bool Function(T item)? isItemDisabled;
+
+  /// The resolved CupertinoDropdownTheme.
   final CupertinoDropdownTheme theme;
+
+  /// Callback triggered when tapping outside the popup.
   final VoidCallback onTapOutside;
+
+  /// Whether tapping outside dismisses the dropdown.
   final bool dismissOnTapOutside;
+
+  /// Optional header widget at top of popup menu.
   final Widget? header;
+
+  /// Optional footer widget at bottom of popup menu.
   final Widget? footer;
 
+  /// Creates a [CupertinoDropdownOverlay] widget.
   const CupertinoDropdownOverlay({
     super.key,
     required this.initialPosition,

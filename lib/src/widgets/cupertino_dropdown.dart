@@ -11,16 +11,20 @@ class CupertinoDropdownController extends ChangeNotifier {
   VoidCallback? _openCallback;
   VoidCallback? _closeCallback;
 
+  /// Whether the dropdown popup is currently open.
   bool get isOpen => _isOpen;
 
+  /// Programmatically opens the dropdown.
   void open() {
     _openCallback?.call();
   }
 
+  /// Programmatically closes the dropdown.
   void close() {
     _closeCallback?.call();
   }
 
+  /// Toggles the dropdown open/closed state.
   void toggle() {
     if (_isOpen) {
       close();
@@ -134,6 +138,7 @@ class CupertinoDropdown<T> extends StatefulWidget {
   /// Custom suffix widget for the anchor field.
   final Widget? suffix;
 
+  /// Creates a [CupertinoDropdown] widget.
   const CupertinoDropdown({
     super.key,
     required this.items,

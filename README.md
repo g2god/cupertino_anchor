@@ -2,7 +2,7 @@
 
 A production-ready, zero-flicker Cupertino-style dropdown and picker package for Flutter. Built with intelligent dynamic positioning, safe-area awareness, keyboard avoidance, and native iOS popover aesthetics.
 
-[![pub package](https://img.shields.io/badge/pub-v1.1.1-blue.svg)](https://pub.dev/packages/cupertino_anchor)
+[![pub package](https://img.shields.io/badge/pub-v1.1.2-blue.svg)](https://pub.dev/packages/cupertino_anchor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -22,7 +22,7 @@ A production-ready, zero-flicker Cupertino-style dropdown and picker package for
   - **Case A (Fits Below)**: Opens downward from top anchor pivot.
   - **Case B (Not enough below, fits above)**: Automatically opens upward from bottom anchor pivot.
   - **Case C (Constrained space)**: Automatically picks the side with more available space and constrains dropdown height cleanly without overflowing.
-- **✨ Native iOS Popover Animation**: Direction-dependent scale ($0.95 \to 1.0$), fade ($0.0 \to 1.0$), and subtle directional translation ($6\text{px} \to 0\text{px}$) anchored to the origin field.
+- **✨ Native iOS Popover Animation**: Direction-dependent scale (0.95 → 1.0), fade (0.0 → 1.0), and subtle directional translation (6px → 0px) anchored to the origin field.
 - **🔄 Live Anchor & Scroll Tracking**: Tracks moving anchors inside `ListView`, `CustomScrollView`, and nested scroll views smoothly with configurable `DropdownDismissBehavior`.
 - **⌨️ Keyboard & Safe Area Aware**: Automatically responds to `MediaQuery.viewInsets` and safe area paddings to prevent rendering underneath on-screen keyboards.
 - **🎨 Comprehensive Cupertino Theming**: Translucent frosted glass effect (`BackdropFilter`), dark/light mode automatic resolution, custom shadows, borders, text styles, and checkmarks.
@@ -37,7 +37,7 @@ Add `cupertino_anchor` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  cupertino_anchor: ^1.1.1
+  cupertino_anchor: ^1.1.2
 ```
 
 Import it:

@@ -103,11 +103,19 @@ abstract final class CupertinoDropdownAnimations {
 
 /// Popover animation widget delivering the native iOS spring & expand pop effect.
 class CupertinoDropdownAnimation extends StatelessWidget {
+  /// The driving animation progress from 0.0 to 1.0.
   final Animation<double> animation;
+
+  /// The resolved direction ([DropdownDirection.up] or [DropdownDirection.down]) determining the pivot.
   final DropdownDirection resolvedDirection;
+
+  /// The target calculated height for the expanding popover container.
   final double targetHeight;
+
+  /// The inner popover content widget to animate.
   final Widget child;
 
+  /// Creates a [CupertinoDropdownAnimation] widget.
   const CupertinoDropdownAnimation({
     super.key,
     required this.animation,

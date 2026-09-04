@@ -1,3 +1,9 @@
+# 1.1.2
+
+- Achieved 100% Pana documentation coverage with complete dartdoc comments across all public APIs, constructors, and properties.
+- Updated `.pubignore` and added `example/README.md` so the example app is bundled correctly for pub.dev.
+- Optimized demo GIF file sizes and cleaned up README markdown formatting.
+
 # 1.1.1
 
 - Updated README demo previews to animated GIFs for seamless display across GitHub and pub.dev.
